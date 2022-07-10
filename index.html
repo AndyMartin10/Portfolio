@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Andy Martin</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="contenedor">
+    <h1 class="logo">
+      <a href="index.html" class="a">Portfolio</a>
+      <button class="button">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </button>
+    </h1>
+    
+    
+  </div>
+
+    <nav class="nav">
+      <ul class="ul">
+        <li class="li"><a href="#inicio" onclick="toggleMenu();" class="a">Inicio</a></li>
+        <li class="li"><a href="#sobre-mi" onclick="toggleMenu();" class="a">Sobre mí</a></li>
+        <li class="li"><a href="#habilidades" onclick="toggleMenu();" class="a">habilidades</a></li>
+        <li class="li"><a href="#proyectos" onclick="toggleMenu();" class="a">Proyectos</a></li>
+        <li class="li"><a href="#contacto" onclick="toggleMenu();" class="a">Contacto</a></li>
+      </ul>
+    </nav>
+  
+  </header>
+
+  <section id="inicio" class="intro"> <!-- INTRO -->
+    <div class="contenedor">
+      <div class="contenedor__intro">
+      <h2 class="intro__titulo"> <span>Hola, mi nombre es</span> 
+        <h1 class="intro__titulo2">Andy Martin</h1>
+        <h2 class="intro__titulo3">me gusta
+          <span class="main__style" id="likes"></span>
+        </h2>
+      </h2>
+    </div>
+
+      <div class="typing">
+        <p class="typing__texto typing-demo">Soy Frontend Developer.</p>
+      </div>
+
+      <a href="#contacto" id="#contacto" class="boton__contactame">Contactame</a>
+
+      <div class="contenedor__contactame">
+        <div class="main__contacto">
+          <div class="contactame">
+            <a download="CV Andy Martin" href="./img/cv subir.pdf">C.Vitae</a>
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+    
+          <div class="contactame">
+            <a target="_blank" href="https://github.com/AndyMartin10">Github</a>
+            <i class="fa-brands fa-github-square" target="_blank" href="https://github.com/AndyMartin10"></i>
+          </div>
+    
+          <div class="contactame">
+            <a target="_blank" href="https://www.linkedin.com/in/andymartin10/">Linkedin</a>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="sobre-mi"> <!-- SOBRE-MI -->
+    <div class="contenedor">
+      <h2 class="subtitulo">Sobre mí</h2>
+     
+
+      <div class="contenedor__sobre-mi">
+        <div class="img__wrapper">
+          <img class="img__picture" src="./img/andy.png" alt="Foto Perfil" >
+        </div>
+
+       <div class="sobre-mi__parrafo">
+          <p class="bio">Mi nombre es Andy Martin. Me encanta el mundo del desarrollo web. Empezé a dedicar mi tiempo a investigar como funciona la tecnología. Me propuse aprender de manera autodidacta, por lo tanto, busqué recursos y comencé mi ruta de estudios. Así descubrí el desarrollo Front End.</p>
+        </div>
+      </div>
+
+      <div class="servicios">
+        <div class="contenedor__servicios">
+          <img class="img__servicio" src="./img/diseno-grafico.png" alt="Icono Diseño Gráfico">
+          <h2 class="titulo__servicio">Diseño Gráfico</h2>
+          <p class="parrafo__servicio">Experiencia en los programas de Adobe. Retoque fotográfico, maquetacion de revistas, libros, banners... y dibujo vectorial, logopitpos, sellos...</p>
+        </div>
+
+        <div class="contenedor__servicios">
+          <img class="img__servicio" src="./img/coding.png" alt="Icono Frontend Developer">
+          <h2 class="titulo__servicio">Frontend Developer</h2>
+          <p class="parrafo__servicio">Apasionado del desarrollo web. Conocimientos en HTML, CSS, JavaScript, Sass, Boostrap, Java... en constante aprendizaje de frameworks como React, Angular o VueJs.</p>
+        </div>
+
+        <div class="contenedor__servicios">
+          <img class="img__servicio" src="./img/interfaz-ux.png" alt="Icono Frontend Developer">
+          <h2 class="titulo__servicio">Diseño UX/UI</h2>
+          <p class="parrafo__servicio">Experiencia en el desarrollo de interfaz gráfica. Conocimientos de composición, tipografías, paletas... para ayudar a la experiencia del usuario. </p>
+        </div>
+
+  </section>
+
+  <section id="habilidades" class="habilidades"> <!-- HABILIDADES -->
+    <div class="contenedor">
+      <h2 class="subtitulo">Habilidades</h2>
+
+      <div class="habilidades__grid">
+
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/html-5.png" alt="logo de HTML">
+          <p class="parrafo__habilidad">HTML5</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/css-3.png" alt="logo de CSS3">
+          <p class="parrafo__habilidad">CSS3</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/js.png" alt="logo de JavaScript">
+          <p class="parrafo__habilidad">JavaScript</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/java-logo.png" alt="logo de Java">
+          <p class="parrafo__habilidad">Java</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/sass.png" alt="logo de Sass">
+          <p class="parrafo__habilidad">Sass</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/boostrap.svg" alt="logo de Boostrap">
+          <p class="parrafo__habilidad">Boostrap</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/git.png" alt="logo de Git">
+          <p class="parrafo__habilidad">Git</p>
+        </div>
+        
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/github.webp" alt="logo de Github">
+          <p class="parrafo__habilidad">Github</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/photoshop.png" alt="logo de Photoshop">
+          <p class="parrafo__habilidad">Photoshop</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/illustrator.png" alt="logo de Illustrator">
+          <p class="parrafo__habilidad">Illustrator</p>
+        </div>
+  
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/adobe-xd.webp" alt="logo de Adobe XD">
+          <p class="parrafo__habilidad">Adobe XD</p>
+        </div>
+        
+        <div class="contenido__habilidad">
+          <img class="img__habilidad" src="./img/indesign.png" alt="logo de Indesign">
+          <p class="parrafo__habilidad">Indesign</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="proyectos"> <!-- PROYECTOS -->
+    <div class="contenedor">
+      <h2 class="subtitulo">Últimos proyectos</h2>
+
+      <div class="card__grid">
+  
+        <div class="card box animacion" >
+          <img src="./img/calculadora.svg" alt="mockup 1">
+          <div class="detalles">
+            <h4 class="card__titulo">Caculadora </h4>
+            <p class="card__parrafo">Realizada con HTML, CSS y JavaScript</p>
+            <ul class="card__contenedor">
+              <li>
+                <a class="card__i" href="https://github.com/AndyMartin10/calculadora-js" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+              </li>
+              <li>
+                <a class="codigo" href="https://andymartin10.github.io/calculadora-js/" target="_blank"> <i class=" img--icon fa-solid fa-file-lines"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card box animacion" >
+          <img src="./img/red social.svg" alt="mockup 2">
+          <div class="detalles">
+            <h4 class="card__titulo">Red social FB</h4>
+            <p class="card__parrafo">Red social con HTML y Boostrap</p>
+            <ul class="card__contenedor">
+              <li>
+                <a class="card__i" href="https://github.com/AndyMartin10/Red-social-FB" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+              </li>
+              <li>
+                <a class="codigo" href="https://andymartin10.github.io/Red-social-FB/" target="_blank"> <i class=" img--icon fa-solid fa-file-lines"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card box animacion" >
+          <img src="./img/clon netflix.svg" alt="mockup 3">
+          <div class="detalles">
+            <h4 class="card__titulo">Landing page Netflix</h4>
+            <p class="card__parrafo">Realizado con HTML, CSS y JavaScript</p>
+            <ul class="card__contenedor">
+              <li>
+                <a class="card__i" href="https://github.com/AndyMartin10/clon-Netflix" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+              </li>
+              <li>
+                <a class="codigo" href="https://melodious-licorice-bde991.netlify.app/" target="_blank"> <i class=" img--icon fa-solid fa-file-lines"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card box animacion" >
+          <img src="./img/PORTFOLIO.svg" alt="mockup 4">
+          <div class="detalles">
+            <h4 class="card__titulo">Portfolio</h4>
+            <p class="card__parrafo">Portfolio con HTML CSS y Javascript</p>
+            <ul class="card__contenedor">
+              <li>
+                <a class="card__i" href="#" target="_blank"><i class="fa-brands fa-github-square" target="_blank" href="https://github.com/AndyMartin10/Portfolio"></i></a>
+              </li>
+              <li>
+                <a class="codigo" href="https://stalwart-lily-9a0085.netlify.app" target="_blank"> <i class=" img--icon fa-solid fa-file-lines"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card box animacion" >
+          <img src="./img/BienesRaices.svg" alt="mockup 4">
+          <div class="detalles">
+            <h4 class="card__titulo">Landing Page</h4>
+            <p class="card__parrafo">Realizado con HTML, Css, Sass, JavaScript <br>(dark mode)</p>
+            <ul class="card__contenedor">
+              <li>
+                <a class="card__i" href="https://github.com/AndyMartin10/Landing-Pages-Casas" target="_blank"><i class="fa-brands fa-github-square" ></i></a>
+              </li>
+              <li>
+                <a class="codigo" href="https://singular-cupcake-c853ec.netlify.app/" target="_blank"> <i class=" img--icon fa-solid fa-file-lines"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card box animacion" >
+          <img src="./img/VR.svg" alt="mockup 4">
+          <div class="detalles">
+            <h4 class="card__titulo">Landing Page</h4>
+            <p class="card__parrafo">Web Site con HTML y CSS. Responsive a 375px y 1400px</p>
+            <ul class="card__contenedor">
+              <li>
+                <a class="card__i" href="https://github.com/AndyMartin10/Landing-Page-VR" target="_blank"><i class="fa-brands fa-github-square" target="_blank"></i></a>
+              </li>
+              <li>
+                <a class="codigo" href="https://silly-haupia-4de2d0.netlify.app/" target="_blank"> <i class=" img--icon fa-solid fa-file-lines"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="formulario"> <!-- CONTACTO -->
+    <div class="contenedor">
+      <h2 class="subtitulo">Contacto</h2>
+
+      <form action="https://formspree.io/f/xdobrndn"
+      method="POST" class="form__contenedor">
+        <div class="campo">
+
+        <div class="inputBox">
+          <input type="text" name="Nombre" required="required">
+          <span>Nombre</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" name="Email" required="required">
+          <span>Email</span>
+        </div>
+
+         <div class="campo mensaje">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="Mensaje" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+        </div> 
+
+        <div class="campo enviar">
+          <input type="submit" value="Enviar">
+        </div>
+      </div>
+    </form>
+    </div>
+  </section>
+
+  <footer class="footer">  <!-- FOOTER -->
+    <div class="contenedor">
+      <div class="contenedor__footer--nav">
+    <h1 class="logo__titulo--footer">
+      <a href="#" class="logo--footer">Portfolio</a>
+    </h1>
+
+    <nav class="nav--footer">
+      <ul class="ul--footer">
+        <li class="li--footer"><a href="#inicio" class="a--footer">Inicio</a></li>
+        <li class="li--footer"><a href="#sobre-mi" class="a--footer">Sobre mí</a></li>
+        <li class="li--footer"><a href="#habilidades" class="a--footer">Habilidades</a></li>
+        <li class="li--footer"><a href="#proyectos" class="a--footer">Proyectos</a></li>
+        <li class="li--footer"><a href="#contacto" class="a--footer">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+    <div class="copy">
+      <p class="copy--footer">2022 &copy; Andy Martin | Todos los derechos reservados</p>
+    </div>
+  </div>
+
+  </footer>
+  
+  <script src="https://kit.fontawesome.com/ec776c4b3a.js" crossorigin="anonymous"></script>
+  <script src="./js/gsap.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
